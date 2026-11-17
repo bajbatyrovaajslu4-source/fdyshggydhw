@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт_визитка_Байбатырова_П-13</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <a id="logo" href="uslugi.html">
+        ☕ <span class="brand-name">CoffeeFlow</span>
+      </a>
+      <nav id="mainnav">
+        <ul>
+          <li><a href="index.html">услуги</a></li>
+          <li><a href="onas (1).html">о нас</a></li>
+          <li><a href="onas.html">клиенты</a></li>
+          <li><a href="contact.html">контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-coffee">
+        <h1>Тепло. Аромат. Настроение.</h1>
+        <p>Мы создаём атмосферу, в которой хочется задержаться.</p>
+      </section>
+
+      <form id="contact-form" action="" method="post">
+        <div class="form_item">
+          <label for="topic">Тема обращения</label>
+          <select name="topic" id="topic" required>
+            <option value="" disabled selected hidden>Выберите тему...</option>
+            <option value="1">Заказать услугу</option>
+            <option value="2">Оставить отзыв</option>
+            <option value="3">Предложить сотрудничество</option>
+            <option value="4">Другое</option>
+          </select>
+        </div>
+
+        <div class="form_item">
+          <label for="name">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Зара Байбатырова" required minlength="2" maxlength="30">
+        </div>
+
+        <div class="form_item">
+          <label for="phone">Телефон</label>
+          <input type="tel" name="phone" id="phone" placeholder="8 (001) 00-22-67" required>
+        </div>
+
+        <div class="form_item">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="bajbatyrovaajslu4@gmail.com" required>
+        </div>
+
+        <div class="form_item">
+          <label for="textarea">Сообщение</label>
+          <textarea id="textarea" name="textarea" rows="5" placeholder="Расскажите, как вам наше кофе.." minlength="10" required></textarea>
+        </div>
+
+        <div class="form_item">
+          <button type="submit" class="btn-submit">Отправить запрос</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p class="footer_block"><a href="#contact-form">Написать нам ▲</a></p>
+      <p class="footer_block">&copy; CoffeeFlow, 2026</p>
+      <div class="footer_icons">
+        <a href="." target="_blank"><img class="footer_img" src="" alt="Инстаграм"></a>
+        <a href="." target="_blank"><img class="footer_img" src="" alt="Телеграмм"></a>
+        <a href="." target="_blank"><img class="footer_img" src="" alt="Ютуб"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
